@@ -10,7 +10,8 @@ imagen_player = pygame.image.load("./src/assets/nave.png")
 imagen_player = pygame.transform.scale(
     imagen_player, (PLAYER_WIDTH, PLAYER_HEIGHT))
 
-imagen_fondo = pygame.image.load("./src/assets/fondo.png")
+imagen_fondo = pygame.transform.scale(pygame.image.load(
+    "./src/assets/fondo.png"), (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 imagen_menu = pygame.image.load("./src/assets/menu.png")
 
